@@ -1,0 +1,353 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorando la Célula</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #D4ECDD;
+      color: #152D35;
+    }
+
+    header, nav, footer {
+      background-color: #112031;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+
+    .navbar-pages {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      background-color: #345B63;
+      padding: 0.5em;
+    }
+
+    .navbar-pages a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-video-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2em;
+      gap: 2em;
+      background-color: #ffffff;
+      justify-content: center;
+    }
+
+    .video-box, .info-box {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+    }
+
+    .links-section {
+      text-align: center;
+      padding: 1em;
+      background-color: #345B63;
+    }
+
+    .links-section a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+
+    .info-sites {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 2em;
+      background-color: #ffffff;
+    }
+
+    .info-sites div {
+      background-color: #D4ECDD;
+      padding: 1em;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .mission-section {
+      background-color: #152D35;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    .extra-videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 2em;
+      background-color: #ffffff;
+    }
+
+    .extra-videos iframe {
+      width: 300px;
+      height: 200px;
+    }
+
+    .footer-chat {
+      background-color: #345B63;
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+    }
+
+    .footer-chat input[type="text"] {
+      padding: 0.5em;
+      width: 60%;
+    }
+
+    .footer-chat button {
+      padding: 0.5em 1em;
+      margin: 0.5em;
+      background-color: #152D35;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+                font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 20px;
+        }
+        .noticias-container {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .section-header h2 {
+            margin: 0;
+            font-size: 26px;
+            color: #333;
+        }
+        .toggle-btn {
+            background-color: #0056b3;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .noticias-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .noticia-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .noticia-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .noticia-card:hover {
+            transform: translateY(-5px);
+            background-color: #f7f9fa;
+        }
+        .noticia-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .noticia-content {
+            padding: 15px;
+            flex: 1;
+        }
+        .noticia-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #0056b3;
+        }
+        .noticia-content p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Explorando la Célula</h1>
+  </header>
+
+<nav class="navbar-pages">
+  <a href="index.html">Index</a>
+  <a href="pagina1.html">Página 1</a>
+  <a href="pagina2.html">Página 2</a>
+</nav>
+
+  <section class="main-video-section">
+    <div class="video-box">
+      <h2>Enfermedades Relacionadas con las Células</h2>
+      <p>Cáncer: Se produce cuando una célula crece de forma descontrolada. </p>
+      <p>Enfermedades autoinmunes: Entre ellas se encuentran la artritis reumatoide, el lupus, la diabetes tipo 1, la esclerosis múltiple, la miastenia grave y el síndrome de Guillain-Barré. </p>
+      <p>Trastornos peroxisomales: Son un grupo de trastornos metabólicos hereditarios que ocurren cuando los peroxisomas no funcionan correctamente.</p>
+      <p>Enfermedad de células falciformes: Es un grupo de trastornos sanguíneos que afectan los glóbulos rojos.</p>
+      <p>Enfermedades mitocondriales: Son un grupo de enfermedades poco frecuentes que se producen cuando las mitocondrias no funcionan correctamente. </p>
+       <img src="enfermedades.jfif" />
+    </div>
+    <div class="info-box">
+      <h2>Investigación y Avances en Biologia Celular</h2>
+      <p>Avances tecnológicos </p>
+      <ol>Microscopía: Permite observar estructuras celulares con detalle.</ol>
+      <ol>Citometría de flujo: Analiza características de células individuales.</ol>
+      <ol>Edición genética: Herramientas como CRISPR-Cas9 modifican genes específicos.</ol>
+      <ol>Secuenciación optimizada de ARN de núcleo único: Permite estudiar células congeladas.</ol>
+      <p>Avances en investigación</p>
+      <ol>Separación molecular líquido-líquido: Se considera un mecanismo para explicar la formación de orgánulos sin membrana en células eucariotas. </ol>
+      <ol>Líneas celulares secundarias: Permiten estudiar cómo se comportan las células en condiciones patológicas. </ol>
+      <ol>Atlas de tejidos cruzados: Permite asociar células con enfermedades de un solo gen y rasgos génicos complejos.</ol>
+      <img src="biologia.jfif" />
+    </div>
+  </section>
+
+  <div class="links-section">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+
+  <section class="info-sites">
+    <div>
+      <h3>Sitio web informativo 1</h3>
+      <p><a href="https://www.genome.gov/es/genetics-glossary/Celula" target="_blank">Genome.gov - Tipos de Células</a></p>
+    </div>
+    <div>
+      <h3>Sitio web informativo 2</h3>
+      <p><a href="https://www.cancer.gov/espanol/publicaciones/diccionarios/diccionario-cancer/def/celula" target="_blank">Cancer.gov - Estructura Celular</a></p>
+    </div>
+    <div>
+      <h3>Sitio web informativo 3</h3>
+      <p><a href="https://medlineplus.gov/spanish/genetica/entender/basica/celula/" target="_blank">MedlinePlus - Célula</a></p>
+    </div>
+  </section>
+
+  <footer class="footer-chat">
+    <h3>Comentarios</h3>
+    <input type="text" placeholder="Escribe tu opinión...">
+    <br>
+    <button>Enviar</button>
+    <button>Más info</button>
+    <button>Contactar</button>
+    <button>Volver arriba</button>
+  </footer>
+
+ <div class="noticias-container">
+    <div class="section-header">
+        <h2>Noticias</h2>
+        <button class="toggle-btn" id="toggleButton">Mostrar noticias</button>
+    </div>
+
+    <div class="noticias-grid" id="noticiasGrid" style="display: none;">
+
+        <a class="noticia-link" href="https://www.bbc.com/mundo/articles/c8jevn8j7lpo" target="_blank">
+            <div class="noticia-card">
+                <img src="imagen1.jpg" alt="BBC News">
+                <div class="noticia-content">
+                    <h3>Las primeras imágenes de la tumba del papa Francisco en la Basílica de Santa María la Mayor</h3>
+                    <p>27 de abril de 2025 - BBC</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="noticia-link" href="https://elpais.com/ciencia/2025-04-24/sodoma-y-gomorra-no-fueron-destruidas-por-el-impacto-de-un-objeto-extraterrestre.html" target="_blank">
+            <div class="noticia-card">
+                <img src="imagen2.jpg" alt="El País">
+                <div class="noticia-content">
+                    <h3>Sodoma y Gomorra no fueron destruidas por el impacto de un objeto extraterrestre</h3>
+                    <p>24 de abril de 2025 - El País</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="noticia-link" href="https://edition.cnn.com/2025/04/27/us/colorado-springs-ice-raid-club/index.html" target="_blank">
+            <div class="noticia-card">
+                <img src="imagen3.jpg" alt="CNN News">
+                <div class="noticia-content">
+                    <h3>Over 100 immigrants arrested in raid on underground Colorado nightclub where active-duty military members worked, feds say</h3>
+                    <p>27 de abril de 2025 - CNN</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const noticiasGrid = document.getElementById('noticiasGrid');
+
+    toggleButton.addEventListener('click', function(event) {
+        event.stopPropagation(); 
+        if (noticiasGrid.style.display === 'none') {
+            noticiasGrid.style.display = 'grid';
+            toggleButton.textContent = 'Ocultar noticias';
+        } else {
+            noticiasGrid.style.display = 'none';
+            toggleButton.textContent = 'Mostrar noticias';
+        }
+    });
+</script>
+
+  <div style="text-align: center; margin: 2em;">
+    <button onclick="cambiarColorTitulo()">Cambiar Color del Título</button>
+    <button onclick="cambiarColorFondo()">Cambiar Color del Fondo</button>
+  </div>
+
+  <script>
+    function cambiarColorTitulo() {
+      const colores = ["red", "blue", "green", "purple", "orange", "pink", "teal", "brown"];
+      const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+      document.querySelector('header h1').style.color = colorAleatorio;
+    }
+
+    function cambiarColorFondo() {
+      const coloresFondo = ["#D4ECDD", "#FFDDC1", "#C1FFD7", "#C1D4FF", "#FFC1E3", "#F0C1FF", "#FFF6C1"];
+      const fondoAleatorio = coloresFondo[Math.floor(Math.random() * coloresFondo.length)];
+      document.body.style.backgroundColor = fondoAleatorio;
+    }
+  </script>
+
+</body>
+
+</html>

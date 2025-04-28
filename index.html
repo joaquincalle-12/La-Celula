@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorando la Célula</title>
+  <script>
+    window.onload = function() {
+      alert(" ¡Hola! Bienvenido al sitio de la celula");
+    }
+  </script>
+
+ <meta charset="UTF-8">
+    <meta name="description"content="la celula">
+    <meta name="author"content="proyecto de informática">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="js/jquery.min.js"></script>
+  <title>Explorando la Célula</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Explorando la Célula</h1>
+  </header>
+
+<nav class="navbar-pages">
+    <a href="pagina1.html">Página 1</a>
+    <a href="pagina2.html">Página 2</a>
+    <a href="pagina3.html">Página 3</a>
+</nav>
+
+
+  <section class="main-video-section">
+    <div class="video-box">
+      <h2>¿Qué es una célula?</h2>
+      <iframe src="https://www.youtube.com/embed/bd4V992W6wo" title="Video introductorio sobre la célula" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="info-box">
+      <h2>Introducción a la Célula</h2>
+      <p>La célula es el componente básico de todos los seres vivos. El cuerpo humano está compuesto por billones de células. Le brindan estructura al cuerpo, absorben los nutrientes de los alimentos, convierten estos nutrientes en energía y realizan funciones especializadas. Las células también contienen el material hereditario del organismo y pueden hacer copias de sí mismas.</p>
+    </div>
+  </section>
+
+  <div class="links-section">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+
+  <section class="info-sites">
+    <div>
+      <h3>Sitio web informativo 1</h3>
+      <p><a href="https://medlineplus.gov/spanish/genetica/entender/basica/celula/" target="_blank">MedlinePlus - Célula</a></p>
+    </div>
+    <div>
+      <h3>Sitio web informativo 2</h3>
+      <p><a href="https://www.genome.gov/es/genetics-glossary/Celula" target="_blank">Genome.gov</a></p>
+    </div>
+    <div>
+      <h3>Sitio web informativo 3</h3>
+      <p><a href="https://www.cancer.gov/espanol/publicaciones/diccionarios/diccionario-cancer/def/celula" target="_blank">Cancer.gov</a></p>
+    </div>
+    <div>
+      <h3>Sitio web informativo 4</h3>
+      <p><a href="https://www.irbbarcelona.org/es/news/cancer-ciliopatias-alzheimer-y-parkinson-son-algunas-de-las-muchas-enfermedades-asociadas-a" target="_blank">IRB Barcelona</a></p>
+    </div>
+  </section>
+
+  <section class="mission-section">
+    <h2>Misión y Visión</h2>
+    <p>Nuestra misión es acercar el conocimiento de la biología celular a estudiantes y curiosos de manera clara y visual.</p>
+    <p>Nuestra visión es crear una comunidad educativa que valore la ciencia y la tecnología para comprender la vida.</p>
+  </section>
+
+  <section class="extra-videos">
+    <iframe src="https://www.youtube.com/watch?v=zWb9uStf6tI" title="Tipos de Células"></iframe>
+    <iframe src="https://www.youtube.com/watch?v=I0PdiIICFW4&list=PLtGzu_cxs1dlSP82hP57G0VkicX1Pnl_W" title="División Celular"></iframe>
+  </section>
+
+  <footer class="footer-chat">
+    <h3>Comentarios</h3>
+    <input type="text" placeholder="Escribe tu opinión...">
+    <br>
+    <button>Enviar</button>
+    <button>Más info</button>
+    <button>Contactar</button>
+    <button>Volver arriba</button>
+  </footer>
+
+ <div class="noticias-container">
+    <div class="section-header">
+        <h2>Noticias</h2>
+        <button class="toggle-btn" id="toggleButton">Mostrar noticias</button>
+    </div>
+
+    <div class="noticias-grid" id="noticiasGrid" style="display: none;">
+
+        <a class="noticia-link" href="https://www.bbc.com/mundo/articles/c8jevn8j7lpo" target="_blank">
+            <div class="noticia-card">
+                <img src="imagen1.jpg" alt="BBC News">
+                <div class="noticia-content">
+                    <h3>Las primeras imágenes de la tumba del papa Francisco en la Basílica de Santa María la Mayor</h3>
+                    <p>27 de abril de 2025 - BBC</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="noticia-link" href="https://elpais.com/ciencia/2025-04-24/sodoma-y-gomorra-no-fueron-destruidas-por-el-impacto-de-un-objeto-extraterrestre.html" target="_blank">
+            <div class="noticia-card">
+                <img src="imagen2.jpg" alt="El País">
+                <div class="noticia-content">
+                    <h3>Sodoma y Gomorra no fueron destruidas por el impacto de un objeto extraterrestre</h3>
+                    <p>24 de abril de 2025 - El País</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="noticia-link" href="https://edition.cnn.com/2025/04/27/us/colorado-springs-ice-raid-club/index.html" target="_blank">
+            <div class="noticia-card">
+                <img src="imagen3.jpg" alt="CNN News">
+                <div class="noticia-content">
+                    <h3>Over 100 immigrants arrested in raid on underground Colorado nightclub where active-duty military members worked, feds say</h3>
+                    <p>27 de abril de 2025 - CNN</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const noticiasGrid = document.getElementById('noticiasGrid');
+
+    toggleButton.addEventListener('click', function(event) {
+        event.stopPropagation(); 
+        if (noticiasGrid.style.display === 'none') {
+            noticiasGrid.style.display = 'grid';
+            toggleButton.textContent = 'Ocultar noticias';
+        } else {
+            noticiasGrid.style.display = 'none';
+            toggleButton.textContent = 'Mostrar noticias';
+        }
+    });
+</script>
+
+  <div style="text-align: center; margin: 2em;">
+    <button onclick="cambiarColorTitulo()">Cambiar Color del Título</button>
+    <button onclick="cambiarColorFondo()">Cambiar Color del Fondo</button>
+  </div>
+
+  <script>
+    function cambiarColorTitulo() {
+      const colores = ["red", "blue", "green", "purple", "orange", "pink", "teal", "brown"];
+      const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+      document.querySelector('header h1').style.color = colorAleatorio;
+    }
+
+    function cambiarColorFondo() {
+      const coloresFondo = ["#D4ECDD", "#FFDDC1", "#C1FFD7", "#C1D4FF", "#FFC1E3", "#F0C1FF", "#FFF6C1"];
+      const fondoAleatorio = coloresFondo[Math.floor(Math.random() * coloresFondo.length)];
+      document.body.style.backgroundColor = fondoAleatorio;
+    }
+  </script>
+
+</body>
+
+</html>
